@@ -75,7 +75,7 @@ if st.button("Check my AI", type="primary"):
                 result = response.choices[0].message.content
                 if result:
                     st.success("Classification complete")
-                    st.text(result)
+                    st.markdown(result)
                 else:
                     st.warning("Model returned empty content. Debug info below.")
                     st.json({
